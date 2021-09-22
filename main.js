@@ -6,6 +6,17 @@ var elem = document.querySelector(".grid-container");
 const emailImg = document.querySelector('.email-img')
 const emailText = document.querySelector('.email-text')
 
+setInterval(() => {
+    if(emailText.classList.contains('showEmail')){
+
+    }
+    emailImg.classList.add('animate__shakeY')
+    setTimeout(() => {
+        emailImg.classList.remove('animate__shakeY')
+    }, 1000);
+}, 3000);
+
+
 menuIcon.addEventListener('click', showMenu)
 
 navContainer.addEventListener('click', hideNavBar)
@@ -21,6 +32,7 @@ emailImg.addEventListener('click', () => {
         emailText.classList.remove('showEmail')
     } else {
         emailText.classList.add('showEmail')
+        emailImg.classList.remove('animate__animated')
     }
 });
 
