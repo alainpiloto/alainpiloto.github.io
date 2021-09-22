@@ -6,6 +6,7 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
     margin: 0;
+    overflow-wrap: unset;
   }
 
 body {
@@ -48,12 +49,12 @@ body {
         padding-left: 2rem;
         font-size: 3rem;
         color: #5E0000;
-        width: 50%;
+        flex-basis: 50%;
     }
 
     
     .menu-icon {
-        width: 50%;
+        flex-basis: 50%;
         text-align: right;
         padding-right: 2rem;
     }
@@ -75,7 +76,7 @@ body {
 
     .nav-links-container a {
         /* display: inline-block; */
-        width: max-content;
+        width: 100%;
         text-decoration: none;
         color: #000C2D;
         margin-bottom: 1.5rem;
@@ -101,10 +102,11 @@ body {
         }
         h1 {
             align-self: center;
-            margin-left: 4rem;
+            padding-left: 4rem;
             font-size: 4.5rem;
             color: #5E0000;
             width: unset;
+            flex-basis: unset;
         }
 
         .nav-links-container {
