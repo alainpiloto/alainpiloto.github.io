@@ -6,7 +6,6 @@ menuIcon.addEventListener('click', showMenu)
 
 
 function showMenu(e) {
-    e.stopPropagation()
     if(navContainer.classList.contains('show-menu')) {
         navContainer.classList.remove('show-menu')
     } else {
@@ -17,11 +16,12 @@ function showMenu(e) {
     console.log(navContainer)
 }
 // Mansory for Mobile
+// imagesLoaded( elem, () => {
 
-
+    // } )
+    var elem = document.querySelector(".grid-container");
 function myFunction(x) {
     if (x.matches) { // If media query matches
-        var elem = document.querySelector(".grid-container");
         var msnry = new Masonry(elem, {
           // options
           itemSelector: ".grid-item",
@@ -32,7 +32,7 @@ function myFunction(x) {
         
 
     } else {
-        var elem = document.querySelector(".grid-container");
+        
         var msnry = new Masonry(elem, {
           // options
           itemSelector: ".grid-item",
@@ -46,7 +46,7 @@ function myFunction(x) {
   }
   
   var x = window.matchMedia("(min-width: 768px)")
-  myFunction(x) // Call listener function at run time
-  x.addEventListener('DOMContentLoaded',myFunction) // Attach listener function on state changes
+  x.addEventListener('DOMContentLoaded',myFunction(x)) // Attach listener function on state changes
+
 
 
