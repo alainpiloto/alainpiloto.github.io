@@ -47,6 +47,8 @@ body {
         color: #5E0000;
         width: 50%;
     }
+
+    
     .menu-icon {
         width: 50%;
         text-align: right;
@@ -113,6 +115,7 @@ body {
         }
 
         .languages {
+
             width: fit-content;
             display: flex;
             flex-direction: row;
