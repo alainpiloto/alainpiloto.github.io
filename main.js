@@ -14,38 +14,36 @@ function showMenu(e) {
         navContainer.classList.add('show-menu')
     }
     
+    console.log(navContainer)
 }
 // Mansory for Mobile
 
-var elem = document.querySelector(".grid-container");
 
-imagesLoaded( elem, () => {
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        var elem = document.querySelector(".grid-container");
+        var msnry = new Masonry(elem, {
+          // options
+          itemSelector: ".grid-item",
+          columnWidth: 255,
+          gutter: 10,
+          fitWidth: true
+        });
+        
 
-    function myFunction(x) {
-        if (x.matches) { // If media query matches
-            var msnry = new Masonry(elem, {
-              // options
-              itemSelector: ".grid-item",
-              columnWidth: 255,
-              gutter: 10,
-              fitWidth: true
-            });
-            
-    
-        } else {
-            var msnry = new Masonry(elem, {
-              // options
-              itemSelector: ".grid-item",
-              columnWidth: 150,
-              gutter: 10,
-              fitWidth: true
-            });
-    
-            languages.remove()
-        }
-      }
-} )
+    } else {
+        var elem = document.querySelector(".grid-container");
+        var msnry = new Masonry(elem, {
+          // options
+          itemSelector: ".grid-item",
+          columnWidth: 150,
+          gutter: 10,
+          fitWidth: true
+        });
 
+        languages.remove()
+    }
+  }
   
   var x = window.matchMedia("(min-width: 768px)")
   myFunction(x) // Call listener function at run time
