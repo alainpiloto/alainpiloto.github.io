@@ -1,9 +1,33 @@
 const languages = document.querySelector('.languages');
 const menuIcon = document.querySelector('.icon-img');
 const navContainer = document.querySelector('.nav-links-container')
+var x = window.matchMedia("(min-width: 768px)")
+var elem = document.querySelector(".grid-container");
 
 menuIcon.addEventListener('click', showMenu)
 
+navContainer.addEventListener('click', hideNavBar)
+
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('.header-home');
+    header.classList.toggle('down', window.scrollY > 20)
+} )
+
+function hideNavBar(e) {
+    if(e.target.classList.contains('hideNav')) {
+        navContainer.classList.remove('show-menu')
+            }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    if(!x.matches) {
+        
+        languages.remove()
+    }   
+    
+})
+//   x.addEventListener('DOMContentLoaded',myFunction(x)) // Attach listener function on state changes
+window.onload = changeColumnWidth(x)
 
 function showMenu(e) {
     if(navContainer.classList.contains('show-menu')) {
@@ -11,14 +35,11 @@ function showMenu(e) {
     } else {
 
         navContainer.classList.add('show-menu')
-    }
-    
-    console.log(navContainer)
+    }   
 }
 // Mansory for Mobile
 
-    var elem = document.querySelector(".grid-container");
-function myFunction(x) {
+function changeColumnWidth(x) {
     if (x.matches) { // If media query matches
         imagesLoaded( elem, () => {
             
@@ -30,9 +51,7 @@ function myFunction(x) {
               fitWidth: true
             });
         } )
-        
-        
-
+ 
     } else {
         imagesLoaded( elem, () => {
 
@@ -44,13 +63,10 @@ function myFunction(x) {
               fitWidth: true
             });
     
-            languages.remove()
+            
         } )
     }
   }
   
-  var x = window.matchMedia("(min-width: 768px)")
-//   x.addEventListener('DOMContentLoaded',myFunction(x)) // Attach listener function on state changes
-window.onload = myFunction(x)
 
 

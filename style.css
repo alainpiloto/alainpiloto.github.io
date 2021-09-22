@@ -38,8 +38,11 @@ body {
         z-index: 1;
         top: 0;
         width: 100%;
+        transition: 0.7s;
     }
-    
+        .down {
+            background-color: rgba(240, 240, 240, 0.5);
+        }
     h1 {
         align-self: center;
         padding-left: 2rem;
@@ -71,9 +74,12 @@ body {
     }
 
     .nav-links-container a {
+        /* display: inline-block; */
+        width: max-content;
         text-decoration: none;
         color: #000C2D;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        align-self: center;
     }
 
     .nav-links-container a:last-child {
@@ -82,6 +88,8 @@ body {
     .logo-div-mobile {
         margin: 2rem 0;
     }
+
+    
     @media (min-width: 768px) { 
         .header-home {
             display: flex;
@@ -165,6 +173,7 @@ body {
     flex-direction: column;
     height: 60rem;
     justify-content: center;
+    align-self: center;
       
 }
 
@@ -266,10 +275,10 @@ body {
 }
 
 .mail-container {
-    align-self: flex-start;
-   
-    margin: 2rem;
-
+    display: flex;
+    height: 15rem;
+    align-items: center;
+    padding-left: 4rem;
     }
 .about-container {
     
@@ -330,6 +339,7 @@ body {
 .projects-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .header-developer-projects {
     background-color: #000C2D;
