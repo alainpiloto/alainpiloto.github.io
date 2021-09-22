@@ -46,7 +46,7 @@ function myFunction(x) {
   }
   
   var x = window.matchMedia("(min-width: 768px)")
-  x.addEventListener('DOMContentLoaded',myFunction(x)) // Attach listener function on state changes
-
+//   x.addEventListener('DOMContentLoaded',myFunction(x)) // Attach listener function on state changes
+document.onload = myFunction(x)
 
 
