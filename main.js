@@ -3,6 +3,8 @@ const menuIcon = document.querySelector('.icon-img');
 const navContainer = document.querySelector('.nav-links-container')
 var x = window.matchMedia("(min-width: 768px)")
 var elem = document.querySelector(".grid-container");
+const emailImg = document.querySelector('.email-img')
+const emailText = document.querySelector('.email-text')
 
 menuIcon.addEventListener('click', showMenu)
 
@@ -13,13 +15,23 @@ window.addEventListener('scroll', () => {
     header.classList.toggle('down', window.scrollY > 20)
 } )
 
+emailImg.addEventListener('click', () => {
+    console.log('click en email')
+    if(emailText.classList.contains('showEmail')) {
+        emailText.classList.remove('showEmail')
+    } else {
+        emailText.classList.add('showEmail')
+    }
+});
+
+
 function hideNavBar(e) {
     if(e.target.classList.contains('hideNav')) {
         navContainer.classList.remove('show-menu')
             }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
     if(!x.matches) {
         
         languages.remove()

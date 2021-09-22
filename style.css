@@ -157,7 +157,7 @@ body {
     grid-template-columns: repeat(auto-fill, 37.5rem);
     margin: 6rem 0;
     justify-content: center;
-    gap: 5rem;
+    gap: 0rem;
    }
 
   @media (min-width: 768px) { 
@@ -215,6 +215,7 @@ body {
 }
 
 .projects-title {
+    margin-top: 2rem;
     background-color: #F7F7F7;
     border: 1px solid rgba(146, 146, 146, 0.1);
     justify-self: center;
@@ -279,6 +280,17 @@ body {
     height: 15rem;
     align-items: center;
     padding-left: 4rem;
+    }
+
+    .hide-email {
+        display: none;
+    }
+    
+    .showEmail {
+        display: contents;
+    }
+    .email-img {
+        margin-right: 2rem;
     }
 .about-container {
     
@@ -352,6 +364,7 @@ body {
 }
 
 .developer-container-title {
+    
     background-color: #fff;
     margin-left: 0;
     width: 100%;
@@ -617,9 +630,15 @@ body {
               .social-icons {
                   flex-basis: 100%;
                   display: flex;
-                  justify-content: space-around;
-                  margin: 0 8rem;
+                  justify-content: center;
+                  
+                  margin: 4rem 0
+                  ;
       
+              }
+              .social-icons img {
+                  align-self: center;
+                  margin: 0 4rem;
               }
           .footer-title img {
               width: 5rem;
