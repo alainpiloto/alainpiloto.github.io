@@ -1,4 +1,4 @@
-const languages = document.querySelector('.languages');
+const frontEndText = document.querySelector('.front-end-text');
 const menuIcon = document.querySelector('.icon-img');
 const navContainer = document.querySelector('.nav-links-container')
 var x = window.matchMedia("(min-width: 768px)")
@@ -67,7 +67,7 @@ window.addEventListener('scroll', () => {
 window.addEventListener('DOMContentLoaded', () => {
     if(!x.matches) {
         
-        languages.remove()
+        frontEndText.remove()
     }   
     
 })
