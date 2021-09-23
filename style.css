@@ -132,10 +132,10 @@ body {
         .front-end-text {
 
             /* width: fit-content; */
-            display: flex;
+            display: none;
             /* flex-direction: row; */
             
-            align-self: center;
+            
             /* justify-content: space-around; */
         }
 
@@ -147,7 +147,10 @@ body {
             
 /* Mobile menu */
 @media (min-width: 768px) { 
-    
+    .front-end-text {
+        display: flex;
+        align-self: center;
+    }
     .menu-icon {
         display: none;
     }
