@@ -28,7 +28,7 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         background: rgba(240, 240, 240, 1);
         border: 1px solid rgba(216, 216, 216, 0.5);
         border-bottom-right-radius: 3.4rem;
@@ -97,18 +97,19 @@ body {
         .header-home {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            /* justify-content: space-around; */
             background: rgba(240, 240, 240, 0.42);
-            height: 7rem;
+            height: min-content;
             position: unset;
         }
         h1 {
             align-self: center;
-            /* padding-left: 0rem; */
+            padding-left: 0rem;
             font-size: 4.5rem;
             color: #5E0000;
             width: unset;
             flex-basis: unset;
+            
         }
 
         .nav-links-container {
@@ -116,6 +117,8 @@ body {
         }
         .logo-div {
             display: flex;
+            margin-right: 4rem;
+           
         }
         .logo-div-mobile {
             display: none;
@@ -128,17 +131,17 @@ body {
 
         .front-end-text {
 
-            width: fit-content;
+            /* width: fit-content; */
             display: flex;
-            flex-direction: row;
+            /* flex-direction: row; */
             
             align-self: center;
-            justify-content: space-around;
+            /* justify-content: space-around; */
         }
 
             .front-end-text p {
                 font-size: 2.6rem;
-                padding: 0 1rem;
+                /* padding: 0 1rem; */
             }
             
             
@@ -306,6 +309,7 @@ body {
     height: 60rem;
     text-align: center;
     justify-content: center;
+    
     /* margin: 0 auto; */
     background: #F7F7F7;
     border: 1px solid rgba(146, 146, 146, 0.1);
@@ -314,7 +318,7 @@ body {
 
 @media (min-width: 768px) { 
     .about-container {
-        width: 46rem;
+        width: 100%;
   
     }
 }
