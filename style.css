@@ -33,13 +33,15 @@ body {
         border: 1px solid rgba(216, 216, 216, 0.5);
         border-bottom-right-radius: 3.4rem;
         border-bottom-left-radius: 3.4rem;
-        height: fit-content;
+        min-height: fit-content;
         padding-bottom :0.5rem ;
         position: fixed;
         z-index: 1;
         top: 0;
         width: 100%;
         transition: 0.7s;
+        overflow: hidden;
+        overflow-wrap: break-word;
     }
         .down {
             background-color: rgba(240, 240, 240, 0.5);
