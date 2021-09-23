@@ -289,7 +289,10 @@ body {
     .hide-email {
         display: none;
     }
-    
+    .pop-up-email {
+        display: contents;
+
+    }
     .showEmail {
         display: contents;
     }
@@ -573,9 +576,12 @@ body {
             padding: 2rem 0;
             /* width: 2.5rem; */
         }
-
+            /* .social-icons img:first-of-type {
+                width: 3.5rem;
+            } */
             .social-icons img {
                 width: 3rem;
+                align-self: center;
             }
     .footer-title img {
         width: 3rem;
@@ -652,3 +658,78 @@ body {
               color:#FFA800;
           }
     }
+
+
+
+    .backgroundMail {
+        position: fixed;
+        filter: blur(25px);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 60px;
+        margin: auto;
+        width: 220px;
+        height: 150px;
+        background-color: rgba(245, 248, 241, 0.801);
+        border-radius: 5px;
+    }
+    .mailMobileContainer {
+        display: grid;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 60px;
+        margin: auto;
+        width: 160px;
+        height: 125px;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 5px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "empty-area imgMail-area closeIcon-area"
+          "mailText-area mailText-area mailText-area";
+      }
+      
+            .mailText-area { grid-area: mailText-area; }
+                
+              
+                .mailTextContainer p {
+                    display: grid;
+                    place-content: center;
+                    height: 25px;
+                    font-size: 14px;
+                    font-family: 'Sansita',sans-serif;
+                    background-color: rgba(18, 4, 53, 0.993);
+                    margin: 0.2rem;
+                    color: rgb(255, 255, 255);
+                    border-radius: 5px;
+                    box-shadow: 0px 3px 4px 1px #241D3F;
+                }
+            .empty-area { grid-area: empty-area; }
+      
+            .imgMail-area {
+               grid-area: imgMail-area;
+               display: grid;
+               place-content: center;
+             }
+                .imgMail-area img {
+                    width: 55px;
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+                                            
+                }
+            .closeIcon-area { 
+                grid-area: closeIcon-area;
+                display: grid;
+                align-items: flex-start;
+                justify-items: right;
+                 }
+                 .closeIcon-area img {
+                     width: 15px;
+
+                 }
