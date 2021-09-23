@@ -97,14 +97,14 @@ body {
         .header-home {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
             background: rgba(240, 240, 240, 0.42);
             height: 7rem;
             position: unset;
         }
         h1 {
             align-self: center;
-            padding-left: 4rem;
+            /* padding-left: 0rem; */
             font-size: 4.5rem;
             color: #5E0000;
             width: unset;
@@ -166,8 +166,8 @@ body {
 
   @media (min-width: 768px) { 
       .home-container {
-        grid-template-columns: repeat(auto-fill, 50rem);
-        gap: 10rem;
+        grid-template-columns: repeat(auto-fill, 51rem);
+        gap: 8rem;
 
       }
   } 
@@ -234,7 +234,7 @@ body {
 }
     
 .projects-links {
-    padding: 3rem;
+    padding: 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -298,6 +298,10 @@ body {
     }
     .email-img {
         margin-right: 2rem;
+    }
+
+    .email-img:hover {
+        cursor: pointer;
     }
 .about-container {
     
@@ -600,6 +604,12 @@ body {
         font-size: 1rem;
     }
 
+    .bottom-footer p {
+        font-size: 1.5rem;
+    }
+    .mail-icon-footer:hover {
+        cursor: pointer;
+    }
     @media (min-width: 768px) { 
         .footer-container {
             margin-top: 15rem;
@@ -660,7 +670,7 @@ body {
     }
 
 
-
+                 /**********  MAIL POP UP  ***************/
     .backgroundMail {
         position: fixed;
         filter: blur(25px);
