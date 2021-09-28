@@ -64,13 +64,6 @@ window.addEventListener('scroll', () => {
     header.classList.toggle('down', window.scrollY > 20)
 } )
 
-// window.addEventListener('DOMContentLoaded', () => {
-//     if(!x.matches) {
-        
-//         frontEndText.remove()
-//     }   
-    
-// })
 
 
 function showMenu(e) {
