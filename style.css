@@ -248,7 +248,7 @@ body {
 }
 .repository-link p {
     font-size: 1.5rem;
-    color : #be7f00
+    color : #be7f00;
 }
 @media (max-width: 768px) { 
     
@@ -259,7 +259,7 @@ body {
     }
     .repository-link p {
         font-size: 1.5rem;
-        color : #be7f00
+        color : #be7f00;
     }
 }
 
