@@ -330,7 +330,7 @@ body {
     
     display: grid;
     width: 100%;
-    height: 60rem;
+    height: 70rem;
     text-align: center;
     justify-content: center;
     
@@ -340,25 +340,19 @@ body {
     border-radius: 3.5rem;
 }
 
-@media (min-width: 768px) { 
-    .about-container {
-        width: 100%;
-  
-    }
-}
 
 
 .img-perfil {
     margin: auto auto;
     
 }
-    
+
 .img-perfil img  {
     width: 22rem;
-
+    
 }
 .about-container p {
-    padding: 0 5rem;
+    padding: 0 1rem;
 }
 
 .icons-container {
@@ -374,6 +368,16 @@ body {
     
 }
 
+@media (min-width: 768px) { 
+    .about-container {
+        width: 100%;
+        height: 60rem;
+    
+    }
+    .about-container p {
+        padding: 0 3rem;
+    }
+}
 
 /******* Developer Section **********/
 
@@ -439,6 +443,10 @@ body {
 }
 
 
+.corner-icon {
+    width: 3rem;
+}
+
 .img-project {
     width: 100%;
 }
@@ -450,9 +458,16 @@ body {
     flex-direction: column;
   
 }
+
+.title-project-container {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0
+}
 .project h3 {
+    display: inline;
     font-size: 2rem;
-    margin: 1rem 0 4rem 0;
+    margin: 0 0 0 1rem;
 }
 .project-text {
     width:100%;
