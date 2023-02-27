@@ -14,6 +14,7 @@ const workerUrl = "https://delicate-lab-9d2d.alainpiloto.workers.dev/";
 // Define las opciones de la solicitud HTTP
 const options = {
   method: "GET",
+  mode: "no-cors",
 };
 
 // Envía la solicitud HTTP al worker
