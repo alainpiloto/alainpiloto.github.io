@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="image_src" href="img/Preview.jpg">
+    
+    <meta property="og:image" content="https://alainpiloto.github.io/img/Preview-600x300.jpg">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="300">
+    <meta property="og:site_name" content="AlainPiloto">
+    <meta property="og:type" content="website">
+    <title>Alain Piloto Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon16x16.png">
+
+</head>
+<body>
+    <section class="home-section" id"home">
+        <header class="header-home">
+            <h1>Alain Piloto</h1>
+            <div class="logo-div">
+                <img src="./img/logo_65x66.png" alt="logo alain piloto">
+            </div>
+            <div class="front-end-text">
+                <p> Front-End </p>   
+            </div>
+            
+            <!-- Menu for Mobile -->
+            <div class="menu-icon">
+                <img class="icon-img" src="/img/Design-assets/icons/hamburguer-menu.png" alt="menu icon">
+            </div>
+            <nav class="nav-links-container">
+                <div class="logo-div-mobile">
+                    <img src="./img/logo_65x66.png" alt="logo alain piloto">
+                </div>
+                <a href="#home" class="hideNav">Home</a>
+                <a href="#about" class="hideNav">About</a>
+                <a href="#developer-section" class="hideNav">Projects as Developer</a>
+                <a href="#designer-section" class="hideNav">Projects as Designer</a>
+                <a href="#footer" class="hideNav">A little more about me</a>
+                <a href="#footer" class="hideNav">Contact me</a>
+            </nav>
+
+        </header>
+        <div class="home-container">
+            <div class="welcome-container">
+                <div class="grid-container-welcome">
+                    <div class="welcome-text">
+                        <p>
+                            <span>W</span>elcome <span>to</span> <br>
+                            <span>my</span> portfoli<span>o</span>
+                        </p>
+                        
+                    </div>
+                    <div class="projects-title">
+                        <h2>Projects</h2>
+                    </div>
+                    <div class="projects-links">
+                        <div class="dev-side-title">
+                            <a href="#developer-section">Developer Side</a>
+                        </div>
+                        <div class="designer-side-title">
+                            <a href="#designer-section">Designer Side</a>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="mail-container">
+                    <img class="email-img animate__animated" src="/img/Design-assets/icons/mail-icon.png" alt="">
+                    <p class="email-text hide-email">alainpiloto@gmail.com</p>
+                </div>
+            </div>
+            <div class="about-container" id="about">
+                <div class="img-perfil">
+                    <img src="/img/Design-assets/img-perfil-skills 1.jpg" alt="perfil image">
+                </div>
+                <div class="about-text">
+                    <p>Hi! I’m Alain, I discovered my passion in web development; programming fits perfectly with my 
+                        nature of being curious. I have developed pages with HTML, CSS, pure Javascript, React.js, as 
+                        well as I have worked with Node.js, Express.Js, MySQL and the ORM Sequelize, PUG 
+                        as Template Engine and RESTful API for implementation of a travel website. My growth focus is on becoming 
+                        an excellent FullStack developer. I am also developing my React.Js skills. I am a talent 
+                        with great potential that seeks to obtain its opportunity within the IT world and work 
+                        within a multidisciplinary team and of course contribute my energy, learning and my 
+                        resources as a human being that I have been able to acquire in my life path.
+                    <br/>
+                    <br/>
+                    <p>I also like to exploit my creative side designing from web pages to graphic pieces for advertising.</p>
+                </div>
+                <div class="icons-container">
+                    <a href="https://www.instagram.com/piloto_graphics/?hl=es"><img src="/img/Design-assets/icons/insta-icon.png" alt="instagram icon"></a>
+                    <a href="https://twitter.com/PilotoAlain"><img src="/img/Design-assets/icons/twitter-icon.png" alt="twitter icon"></a>
+                    <a href="https://github.com/alainpiloto"><img src="/img/Design-assets/icons/github-icon.png" alt="github icon"></a>
+                    <a href="https://www.linkedin.com/in/alain-piloto-moreno-982a0b45/"><img src="/img/Design-assets/icons/linkedin-icon.png" alt="linkedin-icon"></a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="developer-section" id="developer-section">
+        <header class="header-developer-projects">
+            <div class="developer-container-title">
+                <img src="/img/Design-assets/icons/globo_internet.png" alt="globe icon">
+                <h2 class="title-text">Web Development Projects</h2>
+            </div>
+        </header>
+        <div class="projects-container">
+            
+            <div class="project">
+                <img class="img-project" src="/img/Design-assets/developer-projects/Guitarla_preview.jpg" alt="Imagen de pagina Web 1">
+                <div class="text-projects-container">
+                    <div class="project-text">
+                        <h3>GuitarLA-Blog-Tienda ( Web site in Next.Js, CMS Strapi, API RESTful)</h3>
+                        <p>
+                            Website developed under Next.Js enviroment which is based on React.Js, it consume data through an API RESTful built with Strapi, ClearDB MySQL for the DB. For styling was used CSS in modules. <br>
+                            NEXT.JS, a framework based on React.js that I really like a lot, its main feature is to perform Pre-rendering of the content, especially with the SSR (Server Side Rendering) technique and its good treatment with SEO. In my opinion, NEXT.js is very easy to use and its documentation is quite intuitive.
+                        </p>
+                        <a href="https://guitarla-next-js.vercel.app/" target="_blank">https://guitarla-next-js.vercel.app/</a>
+                    </div>
+                    <div class="repository-link">
+
+                        <a href="https://github.com/alainpiloto/guitarla_next.js.git" target="_blank"><img class="icon-project" src="/img/Design-assets/icons/github-icon.png" alt="Icono github"></a>
+                        <p>Click in GitHub icon <br>
+                            to see this repository</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project">
+                <img class="img-project" src="/img/Design-assets/developer-projects/agencia_de_viajes_nodejs.jpg" alt="Imagen de pagina Web 2">
+                <div class="text-projects-container">
+                    <div class="project-text">
+                        <h3>Travel Agency ( Web site in Node.Js, Express.Js, API RESTful )</h3>
+                        <p>
+                            Website developed under Node.Js enviroment, using Express.Js as platform, MySQL for the DB with Sequelize as ORM, PUG as Template Engine and use of an API RESTful for the consumption of travel data and creation and visualization of testimonials. All this using a MVC (Model View Controller) approach.
+                        </p>
+                        <a href="http://arcane-fortress-36303.herokuapp.com/" target="_blank">http://arcane-fortress-36303.herokuapp.com/</a>
+                    </div>
+                    <div class="repository-link">
+
+                        <a href="https://github.com/alainpiloto/agenciaViajes_deployment.git" target="_blank"><img class="icon-project" src="/img/Design-assets/icons/github-icon.png" alt="Icono github"></a>
+                        <p>Click in GitHub icon <br>
+                            to see this repository</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project">
+                <img class="img-project" src="/img/Design-assets/developer-projects/pokemon_web.jpg" alt="Imagen de pagina Web 3">
+                <div class="text-projects-container">
+                    <div class="project-text">
+                        <div class="title-project-container">
+                            <img class="corner-icon" src="img/Design-assets/icons/react-icon.png">
+                            <h3>Pokemon stats ( Web site in React.Js, Zustand, API, CSS in components)</h3>
+                        </div>
+                        <p>
+                            This web page was created with "React.js v17" where you can find and consult Pokémon statistics using an API of : "<a href="https://pokeapi.co/ target:"_blank">https://pokeapi.co/</a>". I used "react-router-dom v6" for routing, Zustand as state manager and for layout, I decided to use CSS for each component.
+                        </p>
+                        <a href="https://proyecto-pokemon.vercel.app/" target="_blank">https://proyecto-pokemon.vercel.app/</a>
+                    </div>
+                    <div class="repository-link">
+
+                        <a href="https://github.com/alainpiloto/Proyecto_Pokemon.git" target="_blank"><img class="icon-project" src="/img/Design-assets/icons/github-icon.png" alt="Icono github"></a>
+                        <p>Click in GitHub icon <br>
+                            to see this repository</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <img class="img-project" src="/img/Design-assets/developer-projects/PatientsRegistryReact.jpg" alt="React patient registry image">
+                <div class="text-projects-container">
+                    <div class="project-text">
+                        <div class="title-project-container">
+                            <img class="corner-icon" src="img/Design-assets/icons/react-icon.png">
+                            <h3>Pacients Registry ( Web site in React.Js and TailwindCss)</h3>
+                        </div>
+                        <p>
+                            An app for veterinarian patient registry created with react over the Vite.js tool and TailwindCss for styled where you can add a registry, edit it or delete it and it use localStorage for the data persintence.
+                        </p>
+                        <a href="https://administracioncitas.vercel.app/" target="_blank">https://administracioncitas.vercel.app/</a>
+                    </div>
+                    <div class="repository-link">
+
+                        <a href="https://github.com/alainpiloto/admin-pacientes-react" target="_blank"><img class="icon-project" src="/img/Design-assets/icons/github-icon.png" alt="Icono github"></a>
+                        <p>Click in GitHub icon <br>
+                            to see this repository</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+
+                <img class="img-project" src="/img/Design-assets/developer-projects/Prestamos.jpg" alt="Imagen de pagina Web 5">
+                <div class="text-projects-container">
+                    <div class="project-text">
+                        <div class="title-project-container">
+                            <img class="corner-icon" src="img/Design-assets/icons/react-icon.png">
+                            <h3>Loan Calculator (React)</h3>
+                        </div>
+                        <p>Project developed in "react" which quotes the final amount to be paid based on the amount requested and a number of months in which the loan will be paid.</p>
+                        <a href="https://prestamoscotizador.netlify.app" target="_blank">https://prestamoscotizador.netlify.app</a>
+                    </div>
+                    <div class="repository-link">
+
+                        <a href="https://github.com/alainpiloto/Prestamos-REACT" target="_blank"><img class="icon-project" src="/img/Design-assets/icons/github-icon.png" alt="Icono github"></a>
+                        <p>Click in GitHub icon <br>
+                            to see this repository</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="project">
+                <img class="img-project" src="/img/Design-assets/developer-projects/milenium-dent-portfolio-home.jpg" alt="Imagen de pagina Web 6">
+                <div class="text-projects-container">
+                    <div class="project-text">
+                        <h3>Dental Clinic Web Site</h3>
+                        <p>
+                            Website for a dental clinic with some animations when interacting with it and when loading, mostly supported by Jquery.
+                        </p>
+                        <a href="https://mileniumdent.netlify.app/"" target="_blank">https://mileniumdent.netlify.app/</a>
+                    </div>
+                    <div class="repository-link">
+
+                        <a href="https://github.com/alainpiloto/mileniumdent" target="_blank"><img class="icon-project" src="/img/Design-assets/icons/github-icon.png" alt="Icono github"></a>
+                        <p>Click in GitHub icon <br>
+                            to see this repository</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="project">
+                <img class="img-project" src="/img/Design-assets/developer-projects/tienda-muebles.jpg" alt="Imagen de pagina Web 7">
+                <div class="text-projects-container">
+                    <div class="project-text">
+                        <h3>Furniture E-commerce Concept</h3>
+                        <p>Beautiful and elegant E-commerce concept styled basically with pure CSS</p>
+                        <a href="https://muebles-ecommerce.netlify.app/" target="_blank">https://muebles-ecommerce.netlify.app/</a>
+                    </div>
+                    <div class="repository-link">
+
+                        <a href="https://github.com/alainpiloto/tienda-muebles" target="_blank"><img class="icon-project" src="/img/Design-assets/icons/github-icon.png" alt="Icono github"></a>
+                        <p>Click in GitHub icon <br>
+                            to see this repository</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="project">
+                <img class="img-project" src="/img/Design-assets/developer-projects/Patient-Registry-home.jpg" alt="Imagen de pagina Web 8">
+                <div class="text-projects-container">
+                    <div class="project-text">
+                        <h3>Patient Registry Web</h3>
+                        <p>
+                            This is a patient manager for a veterinarian and its context is based mainly on the use of Javascript where I use classes mainly for the manipulation of objects and the D.O.M.
+                        </p>
+                        <a href="https://registrarpaciente.netlify.app" target="_blank">https://registrarpaciente.netlify.app</a>
+                    </div>
+                    <div class="repository-link">
+
+                        <a href="https://github.com/alainpiloto/Registro-de-pacientes-Veterinaria" target="_blank"><img class="icon-project" src="/img/Design-assets/icons/github-icon.png" alt="Icono github"></a>
+                        <p>Click in GitHub icon <br>
+                            to see this repository</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="project">
+                <img class="img-project" src="/img/Design-assets/developer-projects/Cryptocurrency-converter-home.jpg" alt="Imagen de pagina Web 3">
+                <div class="text-projects-container">
+                    <div class="project-text">
+                        <h3>Cryptocurrency Converter Web</h3>
+                        <p>In this web I consume REST API of
+                            "https://min-api.cryptocompare.com/documentation" to achieve the conversion of cryptocurrencies to local or hard currencies with a simple interface but very pleasing to the eye.
+                        </p>
+                        <a href="https://criptoconvert.netlify.app" target="_blank">https://criptoconvert.netlify.app </a>
+                    </div>
+                    <div class="repository-link">
+
+                        <a href="https://github.com/alainpiloto/Criptomonedas" target="_blank"><img class="icon-project" src="/img/Design-assets/icons/github-icon.png" alt="Icono github"></a>
+                        <p>Click in GitHub icon <br>
+                            to see this repository</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="project">
+                <img class="img-project" src="/img/Design-assets/developer-projects/CRM-CLIENTS-home.jpg" alt="Imagen de pagina Web 4">
+                <div class="text-projects-container">
+                    <div class="project-text">
+                        <h3>CRM clients Web</h3>
+                        <p>This website was created especially for desktop devices and uses IndexedDB as a database and the use of the functions in javascript I made them in a modular way, in addition to allowing the 4 C.R.U.D.</p>
+                        <a href="https://crm-clients.netlify.app/" target="_blank">https://crm-clients.netlify.app/</a>
+                    </div>
+                    <div class="repository-link">
+
+                        <a href="https://github.com/alainpiloto/CRM" target="_blank"><img class="icon-project" src="/img/Design-assets/icons/github-icon.png" alt="Icono github"></a>
+                        <p>Click in GitHub icon <br>
+                            to see this repository</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="bottom-decoration"></div>
+    </section>
+
+    <section class="design-section" id="designer-section">
+        <div class="design-title">
+            <img src="/img/Design-assets/icons/figma-icon.png" alt="figma logo">
+            <h2>Designer Side</h2>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="img/Design-images/Veterinaria_presentation.jpg" target="_blank"><img  src="img/Design-assets/veterinaria.jpg" alt="landing Page Veterinaria "  ></a>
+            </div>
+            <div class="grid-item">
+                <a href="img/Design-images/AlainPiloto_logo.png" target="_blank"><img src="img/Design-assets/logo.jpg" alt="Logo Alain Piloto"  ></a>
+
+            </div>
+            <div class="grid-item">
+                <a href="img/Design-images/LandingGYM_Presentation.jpg" target="_blank"><img  src="img/Design-assets/gym.jpg" alt="Landing Page Gym"  ></a>
+
+            </div>
+            <div class="grid-item">
+
+                <a href="img/Design-images/PUBLICIDAD_TRABAJOS.png" target="_blank"><img  src="img/Design-assets/sofident.jpg" alt="Diseños de carteles publicitarios"  ></a>
+            </div>
+            <div class="grid-item">
+
+                <a href="img/Design-images/MileniumDent_Presentation.png" target="_blank"><img  src="img/Design-assets/milenium.jpg" alt="Diseño pagina web Milenium Dent" ></a>
+            </div>
+            <div class="grid-item">
+                <a href="img/Design-images/flyer_sofident.jpg" target="_blank"><img  src="img/Design-assets/flyer.jpg" alt="Flyer publicitario" ></a>
+
+            </div>
+            <div class="grid-item">
+                <a href="img/Design-images/promo_siris.jpg" target="_blank"><img  src="img/Design-assets/siris.jpg" alt="Diseño de Publicidad"  ></a>
+
+            </div>
+            <div class="grid-item">
+                <a href="img/Design-images/hero-doctor.jpg" target="_blank"><img  src="img/Design-images/hero-doctor.jpg" alt="Landing page doctor"  ></a>
+
+            </div>
+            
+        </div>
+    </section>
+    <footer class="footer-container" id="footer">
+        <div class="footer-title">
+            <img src="/img/Design-assets/icons/code-icon.png" alt="code Icon">
+            <h2>Front-End Developer</h2>
+        </div>
+        <div class="footer-grid">
+            <div class="left-side">
+                <h3>A little more about me</h3>
+                <p>As a front- end developer I like to have a perspective and criteria of a Web designer, not only from the visual point of view but also thinking about how the user will interact with the web. I really enjoy having these superpowers of being able to create solutions with code; It's just amazing. I think that constant learning is the key to keep alive being alive. 
+
+                    So, I enjoy to learn about developing and tech. 
+                    
+                    Remember, Constant learning is the key to success.
+                    
+                    </p>
+            </div>
+            <div class="rigth-side">
+                <h3>Languages that I speak:</h3>
+                <p>Spanish, English, HTML, CSS, SASS, JAVASCRIPT, REACT.JS, LEARNING NODE.JS</p>
+                <h3>Tools that I use:</h3>
+                <p>FIGMA, VS Code, GitHub, CodePen, Bootstrap, Tailwind, Git, Next.js.</p>
+            </div>
+            <div class="social-icons">
+                <img class="mail-icon-footer"src="/img/Design-assets/icons/footer_icons/mail-white.png" alt="Mail Icon">
+                <a href="https://www.instagram.com/piloto_graphics/?hl=es"><img src="/img/Design-assets/icons/footer_icons/insta-white.png" alt="instagram icon"></a>
+                <a href="https://twitter.com/PilotoAlain"><img src="/img/Design-assets/icons/footer_icons/twitter-white.png" alt="twitter icon"></a>
+                <a href="https://github.com/alainpiloto"><img src="/img/Design-assets/icons/footer_icons/github-white.png" alt="github icon"></a>
+                <a href="https://www.linkedin.com/in/alain-piloto-moreno-982a0b45/"><img src="/img/Design-assets/icons/footer_icons/linkedin-white.png" alt="linkedin-icon"></a>
+            </div>
+            <div class="bottom-footer">
+                <p>Web page designed and developed by Alain Piloto</p>
+            </div>
+        </div>
+    </footer>
+    <!-- mail container for Mobile when click in mail icon  -->
+    <div class="jsDriver hide-email">
+        <div class="backgroundMail"></div>
+        <div class="mailMobileContainer animate__animated">
+            <div class="mailText-area ">
+                <div class="mailTextContainer">
+                    <p>alainpiloto@gmail.com</p>
+                </div>
+            </div>
+            <div class="empty-area"></div>
+            <div class="imgMail-area">
+                <img src="img/mail-abierto.png" alt="open envelope">
+            </div>
+            <div class="closeIcon-area">
+                <img class="closeIcon" src="img/close-icon.png" alt="close icon">
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+   <script src="/main.js"></script>
+</body>
+</html>
